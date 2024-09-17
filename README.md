@@ -1,6 +1,6 @@
-# Programmming-Assignment-3
+# Programming-Assignment-3
 
-## PROBLEM 1: 
+# Problem 1 
 - In this problem, we will work with the Pandas Library to load a CSV file into a data frame named `cars.` 
 - This CSV file contains information about various car models and their attributes. 
 - We are tasked to display the first and last five (5) rows of the provided dataset. 
@@ -62,7 +62,7 @@ Using a sample DataFrame `students`, find and display its first and last three (
 |  6   | Yves     | Amethyst   | 18   |  Female   |  ECE    |  1st    |
 
 
-## PROBLEM 2:
+# Problem 2
 - In this problem, we will continue using the DataFrame `cars` from the previous Problem 1. 
 - Now, we are tasked to extract specific information from this DataFrame through subsetting, slicing, and indexing techniques. 
 - Then, the file must be saved as `Surname_Pandas-P2.py.`
