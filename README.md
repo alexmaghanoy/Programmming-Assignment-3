@@ -26,7 +26,7 @@
 *#displays the last five (5) rows of the data frame `cars`*
 
 #### NOTES:
-- The `read.csv` function is used to load the data from the `cars.csv` file.
+- The `read.csv` function loads the data from the `cars.csv` file.
 - The function `.head()` displays the first five rows, while the function `.tail()` displays the last five rows of the dataset.
 
 ### SAMPLE TEST:
