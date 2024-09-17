@@ -25,7 +25,7 @@
 `cars.tail()`     
 *#displays the last five (5) rows of the data frame `cars`*
 
-#### NOTES:
+### NOTES:
 - The `read.csv` function loads the data from the `cars.csv` file.
 - The function `.head()` displays the first five rows, while the function `.tail()` displays the last five rows of the dataset.
 
@@ -44,6 +44,7 @@ Using a sample DataFrame `students`, find and display its first and last three (
 
 The expected output would be:
 ##### First Three (3) rows:
+`students.head(3)`
 |      | Surname  | First Name | Age  | Gender    | Program | Year    |
 |:----:|:--------:|:----------:|:----:|:---------:|:-------:|:-------:|
 |  0   | Diaz     | Samantha   | 21   |  Female   |  ECE    |  4th    | 
@@ -51,6 +52,7 @@ The expected output would be:
 |  2   | Laurez   | Michael    | 19   |  Male     |  CE     |  2nd    |
 
 ##### Last Three (3) rows:
+`students.tail(3)`
 |      | Surname  | First Name | Age  | Gender    | Program | Year    |
 |:----:|:--------:|:----------:|:----:|:---------:|:-------:|:-------:|
 |  4   | Gonzales | Elaina     | 19   |  Female   |  ME     |  2nd    |
@@ -83,24 +85,24 @@ The expected output would be:
 *#load the CSV file into a data frame named `cars`*
 
 `Camaro_Z28 = cars.loc[[23],['Model','cyl']]`   
-*#Subsetting: retrieve the number of cylinders for the "Camaro Z28"*
+*#**subsetting**: retrieve the number of cylinders for the "Camaro Z28"*
 
 `Mazda_RX4 = cars.loc[cars['Model'] == 'Mazda RX4']`   
-*#Slicing: retrieves the row where "Mazda RX4" is located*
+*#**slicing**: retrieves the row where "Mazda RX4" is located*
 
 `cars_selected = cars.iloc[0:5, 0:12:2]`   
-*#Slicing: displays the first 5 rows and odd-numbered columns*
+*#**slicing**: displays the first 5 rows and odd-numbered columns*
 
 `specific_models = cars.loc[[1, 18, 28],['Model', 'cyl', 'gear']]`   
-*#Indexing: retrieves the cylinders and gear type for the given car models//*
+*#**indexing**: retrieves the cylinders and gear type for the given car models//*
 
-#### NOTES:
+### NOTES:
 - **Subsetting**: `.loc` function retrieves the number of cylinders ('cyl') for the "Camaro Z28".
 - **Slicing**: `.loc` function selects the row where "Mazda RX4" is located. The `.iloc` function displays the first 5 rows and odd-numbered columns.
 - **Indexing**: `.loc` function retrieves the "Model", "cyl", and "gear" attributes for specific car models.
 
 ### SAMPLE TEST:
-By still using the SAMPLE data frame, `Students`, extract the following information through subsetting, slicing, and indexing techniques:
+By still using the SAMPLE data frame, `students`, extract the following information through subsetting, slicing, and indexing techniques:
 
 |      | Surname  | First Name | Age  | Gender    | Program | Year    |
 |:----:|:--------:|:----------:|:----:|:---------:|:-------:|:-------:|
@@ -119,16 +121,19 @@ By still using the SAMPLE data frame, `Students`, extract the following informat
 
 The expected output would be:
 ##### For number 1: 
+`Laurez = students.loc[[2],['Surname','Program']]` 
 |      | Surname  | Program |
 |:----:|:--------:|:-------:|
-|      | Laurez   |   CE    |
+|  2   | Laurez   |   CE    |
 
 ##### For number 2:  
+`Yves = students.loc[students['Surname'] == 'Yves']`   
 |      | Surname  | First Name | Age  | Gender    | Program | Year    |
 |:----:|:--------:|:----------:|:----:|:---------:|:-------:|:-------:|
 |  6   | Yves     | Amethyst   | 18   |  Female   |  ECE    |  1st    |
 
 ##### For number 3:  
+`students_selected = students.iloc[0:5, 0:6:2]`
 |      | Surname  | Age   | Program |
 |:----:|:--------:|:------|:-------:|
 |  0   | Diaz     |  21   |   ECE   |  
@@ -138,6 +143,7 @@ The expected output would be:
 |  4   | Gonzales |  19   |   ME    |  
 
 ##### For number 4:  
+`specific_students = students.loc[[0, 3, 4],['Surname', 'First Name', 'Year']]` 
 |      | Surname  | First Name |  Year    |
 |:----:|:--------:|:----------:|:--------:|
 |  0   | Diaz     | Samantha   |   4th    |
