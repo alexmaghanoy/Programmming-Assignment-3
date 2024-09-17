@@ -29,7 +29,7 @@
 - The `read.csv` function loads the data from the `cars.csv` file.
 - The function `.head()` displays the first five rows, while the function `.tail()` displays the last five rows of the dataset.
 
-### SAMPLE TEST:
+#### SAMPLE TEST:
 Using a sample DataFrame `students`, find and display its first and last three (3) rows:
 
 |      | Surname  | First Name | Age  | Gender    | Program | Year    |
@@ -103,7 +103,7 @@ Using a sample DataFrame `students`, find and display its first and last three (
 - **Slicing**: `.loc` function selects the row where "Mazda RX4" is located. The `.iloc` function displays the first 5 rows and odd-numbered columns.
 - **Indexing**: `.loc` function retrieves the "Model", "cyl", and "gear" attributes for specific car models.
 
-### SAMPLE TEST:
+#### SAMPLE TEST:
 By still using the SAMPLE data frame, `students`, extract the following information through subsetting, slicing, and indexing techniques:
 
 |      | Surname  | First Name | Age  | Gender    | Program | Year    |
