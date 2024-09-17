@@ -116,13 +116,13 @@ By still using the SAMPLE data frame, `students`, extract the following informat
 |  5   | Ramos    | Lucas      | 21   |  Male     |  CE     |  4th    |
 |  6   | Yves     | Amethyst   | 18   |  Female   |  ECE    |  1st    |
     
-1.) Display what program the surname 'Laurez' has.
+1. Display what program the surname 'Laurez' has.
 
-2.) Display the row that contains the 'Surname' of 'Yves.'
+2. Display the row that contains the 'Surname' of 'Yves.'
 
-3.) Display the first five (5) rows with odd-numbered columns (1,3,5..) of students.
+3. Display the first five (5) rows with odd-numbered columns (1,3,5..) of students.
 
-4.) Display the first name ('first name') and what year ('year') were the students 'Diaz', 'Chua', and 'Gonzales' are.
+4. Display the first name ('first name') and what year ('year') were the students 'Diaz', 'Chua', and 'Gonzales' are.
 
 
 #### EXPECTED OUTPUT:
