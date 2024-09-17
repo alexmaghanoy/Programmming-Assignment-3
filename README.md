@@ -42,8 +42,9 @@ Using a sample DataFrame `students`, find and display its first and last three (
 |  5   | Ramos    | Lucas      | 21   |  Male     |  CE     |  4th    |
 |  6   | Yves     | Amethyst   | 18   |  Female   |  ECE    |  1st    |
 
-The expected output would be:
-##### First Three (3) rows:
+#### EXPECTED OUTPUT:
+- **first three (3) rows:**
+  
 `students.head(3)`
 |      | Surname  | First Name | Age  | Gender    | Program | Year    |
 |:----:|:--------:|:----------:|:----:|:---------:|:-------:|:-------:|
@@ -51,7 +52,8 @@ The expected output would be:
 |  1   |  Millan  | Cheska     | 18   |  Female   |  EE     |  1st    |
 |  2   | Laurez   | Michael    | 19   |  Male     |  CE     |  2nd    |
 
-##### Last Three (3) rows:
+- **last three (3) rows**
+  
 `students.tail(3)`
 |      | Surname  | First Name | Age  | Gender    | Program | Year    |
 |:----:|:--------:|:----------:|:----:|:---------:|:-------:|:-------:|
@@ -114,25 +116,32 @@ By still using the SAMPLE data frame, `students`, extract the following informat
 |  5   | Ramos    | Lucas      | 21   |  Male     |  CE     |  4th    |
 |  6   | Yves     | Amethyst   | 18   |  Female   |  ECE    |  1st    |
     
-1. Display what program the surname 'Laurez' has.
-2. Display the row that contains the 'Surname' of 'Yves'.
-3. Display the first five (5) rows with odd-numbered columns (1,3,5..) of students.
-4. Display the first name ('first name') and what year ('year') were the students 'Diaz', 'Chua', and 'Gonzales' are.
+1.) Display what program the surname 'Laurez' has.
 
-The expected output would be:
-##### For number 1: 
+2.) Display the row that contains the 'Surname' of 'Yves.'
+
+3.) Display the first five (5) rows with odd-numbered columns (1,3,5..) of students.
+
+4.) Display the first name ('first name') and what year ('year') were the students 'Diaz', 'Chua', and 'Gonzales' are.
+
+
+#### EXPECTED OUTPUT:
+- **for number 1:**
+  
 `Laurez = students.loc[[2],['Surname','Program']]` 
 |      | Surname  | Program |
 |:----:|:--------:|:-------:|
 |  2   | Laurez   |   CE    |
 
-##### For number 2:  
+- **for number 2:**
+  
 `Yves = students.loc[students['Surname'] == 'Yves']`   
 |      | Surname  | First Name | Age  | Gender    | Program | Year    |
 |:----:|:--------:|:----------:|:----:|:---------:|:-------:|:-------:|
 |  6   | Yves     | Amethyst   | 18   |  Female   |  ECE    |  1st    |
 
-##### For number 3:  
+- **for number 3:**
+  
 `students_selected = students.iloc[0:5, 0:6:2]`
 |      | Surname  | Age   | Program |
 |:----:|:--------:|:------|:-------:|
@@ -142,7 +151,8 @@ The expected output would be:
 |  3   | Chua     |  20   |   IE    | 
 |  4   | Gonzales |  19   |   ME    |  
 
-##### For number 4:  
+- **for number 4:**
+   
 `specific_students = students.loc[[0, 3, 4],['Surname', 'First Name', 'Year']]` 
 |      | Surname  | First Name |  Year    |
 |:----:|:--------:|:----------:|:--------:|
